@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<title>Add</title>
+</head>
+<body>
+
+<!-- <h1>Big Questions</h1> -->
+<img src="https://rb.gy/ixdxd8">
+<p>Welcome to the amazing website!!</p>
+<br>
+<p>You are seeing home.html is inside templates </p>
+
+<!-- <button type="button" class="btn btn-success"> Submit the comment</button> -->
+
+
+<form action="http://127.0.0.1:5000/addQuestion" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Title</label>
+    <input type="text" class="form-control" id="title" name="title" placeholder="Title for your question">
+    <small id="titleHelp" class="form-text text-muted">Title should be clear to the point to get quick answer.</small>
+  </div>
+  <div class="form-group">
+    <label for="details">Description</label>
+    <input type="text" class="form-control" id="details" name="details" placeholder="write the full problem">
+  </div>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="your name">
+  </div>
+  <!-- <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div> -->
+  <button type="submit" class="btn btn-success">Submit your question</button>
+</form>
+
+{% endblock %}
